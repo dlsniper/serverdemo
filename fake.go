@@ -69,5 +69,23 @@ func makeRequest(done chan struct{}, c *http.Client, page string, i int64) {
 
 	_, _ = io.Copy(ioutil.Discard, resp.Body)
 
+	debugger.SetLabels(func() []string {
+		return []string{
+			"request", "automated",
+			"page", page,
+			"rid", strconv.Itoa(int(i)),
+			"status", "before sleep",
+		}
+	})
+
 	time.Sleep(time.Duration(10+rand.Intn(40)) + time.Millisecond)
+
+	debugger.SetLabels(func() []string {
+		return []string{
+			"request", "automated",
+			"page", page,
+			"rid", strconv.Itoa(int(i)),
+			"status", "after sleep",
+		}
+	})
 }
