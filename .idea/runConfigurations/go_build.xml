@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="go build" type="GoApplicationRunConfiguration" factoryName="Go Application">
-    <module name="awesomeProject25" />
+    <module name="serverdemo" />
     <working_directory value="$PROJECT_DIR$" />
     <kind value="PACKAGE" />
     <filePath value="$PROJECT_DIR$/main.go" />

@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="go build -tags debugger" type="GoApplicationRunConfiguration" factoryName="Go Application">
-    <module name="awesomeProject25" />
+    <module name="serverdemo" />
     <working_directory value="$PROJECT_DIR$" />
     <go_parameters value="-tags debugger" />
     <kind value="PACKAGE" />
